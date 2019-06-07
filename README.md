@@ -3,4 +3,4 @@ Modular pattern, JavaScript Zeplin Profile Slider
 
 to begin:
 
-load html doc in browser
+load index.html doc in browser
