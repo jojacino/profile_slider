@@ -1,0 +1,102 @@
+html {
+    /* Hide Overflow */
+    overflow: hidden;
+}
+
+body {
+    background-color: gray;
+    background-position: -300px -2px;
+    background-size: 20px 20px;
+    text-align: center;
+}
+
+.autoplayButton, .backButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border: solid 2px gray;
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    color: white;
+    height: 40px;
+    width: 80px;
+}
+
+.autoplayOff {
+    background-color: gray;
+}
+
+.backButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* ALL SLIDES */
+.sliderWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideContainer {
+    position: absolute;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    opacity: 1;
+    top: 50px;
+}
+
+.slideOuterRectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideHidden {
+    /* Hidden slide settings */
+    top: 1080px;
+    opacity: 0;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+}
+
+.slideHeader {
+    text-align: center;
+    font-size: 32px;
+    padding: 15px;
+    height: 300px;
+}
+
+.slideParagraph {
+    font-size: 24px;
+    padding: 15px;
+    height: 300px;
+}
+
+/* Navigation Ovals */
+.navOvalContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navOval {
+    width: 14px;
+    height: 14px;
+    background-color: #d8d8d8;
+    border: 1px solid #444;
+    border-radius: 100%;
+}
+
+.navOvalActive {
+    background-color: #00a1e4;
+}
